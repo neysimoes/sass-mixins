@@ -1,18 +1,18 @@
 // Box-shadow
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
 	-webkit-box-shadow:$top $left $blur $color #{$inset};
-	-moz-box-shadow:$top $left $blur $color #{$inset};
-	box-shadow:$top $left $blur $color #{$inset};
+	   -moz-box-shadow:$top $left $blur $color #{$inset};
+	        box-shadow:$top $left $blur $color #{$inset};
 }
 
 // Opacity
 @mixin opacity($value) {
 	$ie: $value * 100;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ie)";
-	filter: alpha(opacity=$ie);
-	-moz-opacity: $value;
+		filter: alpha(opacity=$ie);
 	-khtml-opacity: $value;
-	opacity: $value;
+	  -moz-opacity: $value;
+		   opacity: $value;
 }
 
 // Clearfix
@@ -30,6 +30,23 @@
 // Border-radius
 @mixin border-radius($foo) {
 	-webkit-border-radius: $foo;
-	-moz-border-radius: $foo;
-	border-radius: $foo;
+	   -moz-border-radius: $foo;
+	        border-radius: $foo;
+}
+
+// Box-sizing
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+// Transition
+@mixin transition($parameters...) {
+    -webkit-transition: $parameters;
+       -moz-transition: $parameters;
+         -o-transition: $parameters;
+        -ms-transition: $parameters;
+            transition: $parameters;
 }
