@@ -1,0 +1,35 @@
+// Box-shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+	-webkit-box-shadow:$top $left $blur $color #{$inset};
+	-moz-box-shadow:$top $left $blur $color #{$inset};
+	box-shadow:$top $left $blur $color #{$inset};
+}
+
+// Opacity
+@mixin opacity($value) {
+	$ie: $value * 100;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ie)";
+  filter: alpha(opacity=$ie);
+  -moz-opacity: $value;
+  -khtml-opacity: $value;
+  opacity: $value;
+}
+
+// Clearfix
+@mixin cf {
+  *zoom: 1;
+	&:before, &:after {
+	  content: "";
+	  display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// Border-radius
+@mixin border-radius($foo) {
+	-webkit-border-radius: $foo;
+	-moz-border-radius: $foo;
+	border-radius: $foo;
+}
