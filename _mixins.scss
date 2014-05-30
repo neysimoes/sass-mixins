@@ -50,3 +50,12 @@
         -ms-transition: $parameters;
             transition: $parameters;
 }
+
+// Animation
+@mixin animation($parameters...) {
+    -webkit-animation: $parameters;
+       -moz-animation: $parameters;
+        -ms-animation: $parameters;
+         -o-animation: $parameters;
+            animation: $parameters;
+}

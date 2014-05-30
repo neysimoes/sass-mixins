@@ -9,3 +9,4 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 * Border radius
 * Box-sizing
 * Transition
+* Animation
