@@ -3,8 +3,8 @@ SASS Mixins
 
 A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 
-* Animation 
-   * Keyframes
+* [Animation](#animation)
+   * [Keyframes](#keyframes)
 * Background size
 * Box shadow
 * Opacity
@@ -22,3 +22,17 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 * Gradients
     * Horizontal
     * Vertical
+
+## Animation
+
+```
+.class { @include animation(animationName 1s); }
+```
+
+### Keyframes
+```
+@include keyframes(animationOne) {
+    from { background-color: red; }
+    to { background-color: black; }
+}
+```
