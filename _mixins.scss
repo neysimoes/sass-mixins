@@ -1,10 +1,11 @@
-// Background-size
-@mixin background-size($value) {
-    -webkit-background-size: $value;
-       -moz-background-size: $value;
-         -o-background-size: $value;
-            background-size: $value;
-}
+/*  Background-size
+    ========================================================================== */
+    @mixin background-size($value) {
+        -webkit-background-size: $value;
+           -moz-background-size: $value;
+             -o-background-size: $value;
+                background-size: $value;
+    }
 
 /*  Box shadow
     ========================================================================== */
