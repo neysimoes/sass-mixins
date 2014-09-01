@@ -38,6 +38,26 @@
     		clear: both;
     	}
     }
+    
+/*  Absolute center
+    ========================================================================== */
+    @mixin absolute-center($top: 0, $right: 0, $bottom: 0, $left: 0) {
+      position: absolute;
+      @if $top != none {
+        top: $top;
+      }
+      @if $right != none {
+        right: $right;
+      }
+      @if $bottom != none {
+        bottom: $bottom;
+      }
+      @if $left != none {
+        left: $left;
+      }
+      margin: auto;
+    }
+
 
 /*  Border radius
     ========================================================================== */
