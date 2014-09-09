@@ -159,7 +159,7 @@ The first color is the background color and the other are steps of gradient.
 
 ```scss
 .class { @include vertical-gradient(#666, #000 40%, #333 75%); }
-
+```
 
 ### Absolute Center
 [Reference](http://codepen.io/shshaw/full/gEiDt)
@@ -178,5 +178,4 @@ The first color is the background color and the other are steps of gradient.
   left: 0;
   margin: auto;
 }
-```
 ```
