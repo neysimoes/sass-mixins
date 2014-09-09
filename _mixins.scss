@@ -206,7 +206,7 @@
 
     /*  Vertical gradient
         ========================================================================== */
-        @mixin vertical-gradient($startColor, $endColor) {
+        @mixin simple-vertical-gradient($startColor, $endColor) {
             background-color: $startColor;
             background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
             background: -webkit-linear-gradient(top, $startColor, $endColor);
@@ -217,9 +217,17 @@
             filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$startColor}', EndColorStr='#{$endColor}');
         }
 
+        @mixin vertical-gradient($bgColor, $colors...) {
+            background: -webkit-linear-gradient(top, $colors) $bgColor;
+            background:    -moz-linear-gradient(top, $colors) $bgColor;
+            background:      -o-linear-gradient(top, $colors) $bgColor;
+            background:     -ms-linear-gradient(top, $colors) $bgColor;
+            background:         linear-gradient(to bottom, $colors) $bgColor;
+        }
+
     /*  Horizontal Gradient
         ========================================================================== */
-        @mixin horizontal-gradient($startColor, $endColor) {
+        @mixin simple-horizontal-gradient($startColor, $endColor) {
             background-color: $startColor;
             background: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
             background: -webkit-linear-gradient(left, $startColor, $endColor);
@@ -228,4 +236,12 @@
             background:      -o-linear-gradient(left, $startColor, $endColor);
             background:         linear-gradient(to right, $startColor, $endColor);
             filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#{$startColor}', EndColorStr='#{$endColor}');
+        }
+
+        @mixin horizontal-gradient($bgColor, $colors...) {
+            background: -webkit-linear-gradient(left, $colors) $bgColor;
+            background:    -moz-linear-gradient(left, $colors) $bgColor;
+            background:      -o-linear-gradient(left, $colors) $bgColor;
+            background:     -ms-linear-gradient(left, $colors) $bgColor;
+            background:         linear-gradient(to right, $colors) $bgColor;
         }
