@@ -21,7 +21,7 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
     * [Rotate](#rotate)
     * [Transform-origin](#transform-origin)
 * [Gradients](#gradients)
-    * [Linear Horizonta (simple)l](#linear-horizontal-simple)
+    * [Linear Horizonta (simple)](#linear-horizontal-simple)
     * [Linear Horizontal (multiple)](#linear-horizontal-multiple)
     * [Linear Vertical (simple)](#linear-vertical-simple)
     * [Linear Vertical (multiple)](#linear-vertical-multiple)
@@ -131,22 +131,31 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 
 ### Linear horizontal (simple)
 
+Only start and end color.
+
 ```scss
 .class { @include horizontal-gradient(#666, #000); }
 ```
 
 ### Linear horizontal (multiple)
+
+The first color is the background color and the other are steps of gradient.
+
 ```scss
 .class { @include horizontal-gradient(#666, #000 50%, #444 80%); }
 ```
 
 ### Linear vertical (simple)
 
+Only start and end color.
+
 ```scss
 .class { @include vertical-gradient(#666, #000); }
 ```
 
 ### Linear vertical (multiple)
+
+The first color is the background color and the other are steps of gradient.
 
 ```scss
 .class { @include vertical-gradient(#666, #000 40%, #333 75%); }
