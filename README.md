@@ -21,8 +21,10 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
     * [Rotate](#rotate)
     * [Transform-origin](#transform-origin)
 * [Gradients](#gradients)
-    * [Linear Horizontal](#linear-horizontal)
-    * [Linear Vertical](#linear-vertical)
+    * [Linear Horizonta (simple)l](#linear-horizontal-simple)
+    * [Linear Horizontal (multiple)](#linear-horizontal-multiple)
+    * [Linear Vertical (simple)](#linear-vertical-simple)
+    * [Linear Vertical (multiple)](#linear-vertical-multiple)
 
 ## Animation
 
@@ -127,15 +129,25 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 
 ## Gradients
 
-### Linear horizontal
+### Linear horizontal (simple)
 
 ```scss
 .class { @include horizontal-gradient(#666, #000); }
 ```
 
-### Linear vertical
+### Linear horizontal (multiple)
+```scss
+.class { @include horizontal-gradient(#666, #000 50%, #444 80%); }
+```
+
+### Linear vertical (simple)
 
 ```scss
 .class { @include vertical-gradient(#666, #000); }
 ```
 
+### Linear vertical (multiple)
+
+```scss
+.class { @include vertical-gradient(#666, #000 40%, #333 75%); }
+```
