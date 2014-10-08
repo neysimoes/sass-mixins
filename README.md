@@ -184,8 +184,6 @@ The first color is the background color and the other are steps of gradient.
 
 ## Font-family
 
-The first color is the background color and the other are steps of gradient.
-
 ```scss
 .class { @include font-face("helvetica","../font/helvetica"); }
 ```
