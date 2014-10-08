@@ -15,7 +15,7 @@
                 box-shadow: $parameters;
     }
 
-/*  Box shadow
+/*  Opacity
     ========================================================================== */
     @mixin opacity($value) {
     	$ie: $value * 100;
@@ -74,6 +74,25 @@
            -moz-box-sizing: border-box;
             -ms-box-sizing: border-box;
                 box-sizing: border-box;
+    }
+
+/*  Font-face
+    ========================================================================== */
+    @mixin font-face($name, $font-files, $weight: false, $style: false) {
+      @font-face {
+        font-family: $name;
+        src: url($font-files + ".eot");
+        src: url($font-files + ".eot?#iefix") format('embedded-opentype'),
+             url($font-files + ".woff") format('woff'),
+             url($font-files + ".ttf") format('truetype'),
+             url($font-files + ".svg#" + $name) format('svg');
+        @if $weight {
+          font-weight: $weight;
+        }
+        @if $style {
+          font-style: $style;
+        }
+      }
     }
 
 /*  Transition
