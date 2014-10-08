@@ -13,7 +13,7 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 * [Box-sizing](#box-sizing)
 * [Transition](#transition)
 * [Columns](#columns)
-* [Font-family](#font-famlily)
+* [Font-family](#font-family)
 * [Absolute center](#absolute-center)
 * [Transform](#transform)
     * [Default](#default)
@@ -163,7 +163,7 @@ The first color is the background color and the other are steps of gradient.
 .class { @include vertical-gradient(#666, #000 40%, #333 75%); }
 ```
 
-### Absolute Center
+## Absolute Center
 [Reference](http://codepen.io/shshaw/full/gEiDt)
 
 ```scss
@@ -182,7 +182,7 @@ The first color is the background color and the other are steps of gradient.
 }
 ```
 
-### Font-family
+## Font-family
 
 The first color is the background color and the other are steps of gradient.
 
