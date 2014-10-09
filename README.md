@@ -23,7 +23,7 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
     * [Rotate](#rotate)
     * [Transform-origin](#transform-origin)
 * [Gradients](#gradients)
-    * [Linear Horizonta (simple)](#linear-horizontal-simple)
+    * [Linear Horizontal (simple)](#linear-horizontal-simple)
     * [Linear Horizontal (multiple)](#linear-horizontal-multiple)
     * [Linear Vertical (simple)](#linear-vertical-simple)
     * [Linear Vertical (multiple)](#linear-vertical-multiple)
