@@ -61,10 +61,20 @@
 
 /*  Border radius
     ========================================================================== */
-    @mixin border-radius($foo) {
-    	-webkit-border-radius: $foo;
-    	   -moz-border-radius: $foo;
-    	        border-radius: $foo;
+    @mixin border-radius($size, $directions: all) {
+      @if($directions == all) {
+        -webkit-border-radius: $size;
+           -moz-border-radius: $size;
+                border-radius: $size;
+      }
+    
+      @if($directions != all) {
+        @each $direction in $directions {
+          -webkit-border-#{$direction}-radius: $size;
+             -moz-border-#{$direction}-radius: $size;
+                  border-#{$direction}-radius: $size;
+        }
+      }
     }
 
 /*  Box-sizing
