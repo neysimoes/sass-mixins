@@ -10,6 +10,10 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 * [Opacity](#opacity)
 * [Clearfix](#clearfix)
 * [Border radius](#border-radius)
+    * [Border top radius](#border-top-radius)
+    * [Border bottom radius](#border-bottom-radius)
+    * [Border left radius](#border-left-radius)
+    * [Border right radius](#border-right-radius)
 * [Box-sizing](#box-sizing)
 * [Transition](#transition)
 * [Columns](#columns)
@@ -73,6 +77,29 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 .class { @include border-radius(10px); }
 ```
 
+### Border-top-Radius
+
+```scss
+.class { @include border-top-radius(10px); }
+```
+
+### Border-bottom-Radius
+
+```scss
+.class { @include border-bottom-radius(10px); }
+```
+
+### Border-left-Radius
+
+```scss
+.class { @include border-left-radius(10px); }
+```
+
+### Border-right-Radius
+
+```scss
+.class { @include border-right-radius(10px); }
+```
 ## Box-sizing
 
 ```scss
