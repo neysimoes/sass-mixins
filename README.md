@@ -6,8 +6,9 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 ## Available via Bower
 
 You can download the mixins through [Bower](http://bower.io "Bower"):
-
-  bower install lib-less-mixins
+```
+bower install lib-less-mixins
+```
 
 ## Mixins examples
 
