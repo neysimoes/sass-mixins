@@ -1,0 +1,22 @@
+{
+  "name": "lib-sass-mixins",
+  "version": "0.1.0",
+  "main": "mixins.scss",
+  "authors": [
+    "Ney Simões",
+    "Raphael Fabeni"
+  ],
+  "description": "Mixins for Sass using scss",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".gitignore"
+  ]
+}
