@@ -7,7 +7,7 @@ A collection of [SASS](http://sass-lang.com/ "SASS") mixins for your project.
 
 You can download the mixins through [Bower](http://bower.io "Bower"):
 ```
-bower install lib-less-mixins
+bower install lib-sass-mixins
 ```
 
 ## Mixins examples
